@@ -2,7 +2,7 @@
 
 Description
 
-The ConferenceRegistrationApp is a GUI application developed for the COS3711 Advanced Programming course. This application allows users to register attendees for a conference, manage registration details, and calculate registration fees based on the type of attendee.
+The ConferenceRegistrationApp is a GUI application developed for the COS3711 Advanced Programming course (Assignment 2 , Question 1, UNISA 2024). This application allows users to register attendees for a conference, manage registration details, and calculate registration fees based on the type of attendee.
 
 Features
 // Register Attendees: Add new attendees with their details and select their registration type.
