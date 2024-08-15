@@ -2,39 +2,43 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QObject>
+#include <QWidget>
 #include <QTableWidget>
+#include <QLabel>
 #include <QLineEdit>
-#include <QPushButton>
 #include <QComboBox>
-#include <QLabel> // Include QLabel for GUI labels
-#include "RegistrationList.h"
+#include <QPushButton>
+#include <QFileDialog>
+#include <QMessageBox>
+#include <QTextStream>
+#include <QXmlStreamWriter>
 
-class MainWindow : public QMainWindow {
-    Q_OBJECT
+class MainWindow : public QMainWindow
+{
+Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+explicit MainWindow(QWidget *parent = nullptr);
 
 private slots:
-    void addRegistration();
-    void updateTotalAttendees();
-    void updateTotalFees();
-    void filterRegistrations();
+void addRegistration();
+void saveRegistrationList();
+void filterRegistrations(int index);
 
 private:
-    void setupUi();
+void setupUi();
 
-    QTableWidget *tableWidget;
-    QLineEdit *nameLineEdit;
-    QLineEdit *affiliationLineEdit;
-    QLineEdit *emailLineEdit;
-    QComboBox *registrationTypeComboBox;
-    QPushButton *addButton;
-    QLabel *totalAttendeesLabel; // Label for displaying total attendees
-    QLabel *totalFeesLabel; // Label for displaying total fees
-    QComboBox *filterComboBox; // ComboBox for filtering registrations
-
-    RegistrationList registrationList;
+QTableWidget *tableWidget;
+QLineEdit *nameLineEdit;
+QLineEdit *affiliationLineEdit;
+QLineEdit *emailLineEdit;
+QComboBox *registrationTypeComboBox;
+QPushButton *addButton;
+QLabel *totalAttendeesLabel;
+QLabel *totalFeesLabel;
+QComboBox *filterComboBox;
+QPushButton *saveButton;
 };
 
 #endif // MAINWINDOW_H
