@@ -2,7 +2,7 @@
 #ConferenceRegistrationApp
 
 Description
-The ConferenceRegistrationApp is a GUI application developed for the COS3711 Advanced Programming course (Assignment 2, Question 1, UNISA 2024). This application allows users to register attendees for a conference, manage registration details, and calculate registration fees based on the type of attendee.
+The ConferenceRegistrationApp is a GUI application developed for the COS3711 Advanced Programming course (Assignment 2, UNISA 2024). This application allows users to register attendees for a conference, manage registration details, and calculate registration fees based on the type of attendee.
 
 Features
 Register Attendees: Add new attendees with their details and select their registration type.
@@ -50,21 +50,7 @@ Filter Registrations: Use the filtering option to view registrations by type.
 
 Save/Load: Save the registration list to an XML file or load an existing XML file into the application.
 
-Save Registration List: Use the option in the GUI to save the registration list in XML format. The XML will be structured as follows:
-
-<registrationlist>
-    <registration type="Registration">
-        <attendee>
-            <name>..</name>
-            <affiliation>..</affiliation>
-            <email>..</email>
-        </attendee>
-        <bookingdate>..</bookingdate>
-        <registrationfee>..</registrationfee>
-    </registration>
-    ...
-</registrationlist>
-
+Save Registration List: Use the option in the GUI to save the registration list in XML format. 
 
 License
 This project is licensed under the MIT License.
